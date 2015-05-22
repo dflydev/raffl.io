@@ -1,0 +1,78 @@
+---
+layout: default
+---
+{% block meta %}
+    <meta name="description" content="Developer Friendly Forms for Static Sites. ">
+    <meta name="keywords" content="jekyll, phrozn, sculpin, hosted forms, dyanmic forms, forms, static site, static site forms, static website forms">
+
+    <!-- Facebook -->
+    <meta property="og:title" content="raffl.io" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    <meta property="og:description" content="Easy to manage raffling." />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="raffl.io" />
+    <meta name="twitter:description" content="Easy to manage raffling." />
+{% endblock %}
+{% block hero %}
+    <section id="hero">
+        <div>
+            <header>
+                <h1>raffl.io</h1>
+                <h2>Easy to Manage Raffling</h2>
+            </header>
+            <p>
+                Do you do giveaways at conferences or tradeshows? Do you ever multiple prizes that people are signing up for individually? Having a hard time keeping track of who signed up for what?
+            </p>
+            <p>
+                Raffl.io is a simple hosted service that manages raffled items and tracks which of recipients are interested in each item.
+            </p>
+            <p>
+                We're currently under development. Want early access? Sign up for the raffl.io mailing list to find out how!
+            </p>
+            <form action="http://dflydev.us3.list-manage.com/subscribe/post?u=cdad0534e7ee9275612755f13&amp;id=61bf85e5b2" method="post" role="form">
+                <input type="email" name="EMAIL" placeholder="you@example.com" required>
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_cdad0534e7ee9275612755f13_61bf85e5b2" value=""></div>
+                <input type="submit" value="Subscribe">
+            </form>
+        </div>
+    </section>
+    <section id="hero-credits">
+        <div>
+            <a href="https://www.flickr.com/photos/29892617@N06/8065987712/">&laquo;Boomers&raquo;</a> by <a href="https://www.flickr.com/photos/29892617@N06/">Jim & Rachel McArthur</a>
+        </div>
+    </section>
+{% endblock %}
+{% block content %}
+    <section id="sculpin">
+        <div>
+            <header>
+                <h1>Serious About Static Sites?</h1>
+                <h2>Yep, so are we.</h2>
+            </header>
+            <a href="https://sculpin.io"><img src="{{ site.url }}/assets/images/sculpin.png"></a>
+            <p>
+                As the creators of <a href="https://sculpin.io">Sculpin</a>, a static site generator written in PHP, we take static sites very seriously. We built raffl.io for ourselves because other solutions just weren't that fun to work with. We think you'll enjoy raffl.io as much as we do!
+            </p>
+        </div>
+    </section>
+    <section>
+        <div>
+            <header>
+                <h1>Want Early Access?</h1>
+                <h2>Join our mailing list to learn more!</h2>
+            </header>
+            <p>
+                We're currently under development. If you want to get early access to raffl.io, sign up for our mailing list to get on our early access list!
+            </p>
+
+            <form action="http://dflydev.us3.list-manage.com/subscribe/post?u=cdad0534e7ee9275612755f13&amp;id=61bf85e5b2" method="post" role="form">
+                <input type="email" name="EMAIL" placeholder="you@example.com" required>
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_cdad0534e7ee9275612755f13_61bf85e5b2" value=""></div>
+                <input type="submit" value="Subscribe">
+            </form>
+        </div>
+    </section>
+{% endblock %}

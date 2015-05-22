@@ -1,0 +1,46 @@
+---
+layout: default
+title: Thanks For Subscribing!
+---
+{% block hero %}
+    <section id="hero">
+        <div>
+            <header>
+                <h1>Thanks!</h1>
+                <h2>Your Subscription Has Been Confirmed</h2>
+            </header>
+            <p>
+                We will be sending out more information on Liquid Forms soon! In the meantime, if you have questions, send questions to <a href="mailto:hello@raffl.io">hello@raffl.io</a>.
+            </p>
+            <p>
+                <a href="{{ site.url }}/">Go back to the landing page</a>
+            </p>
+            <p></p>
+        </div>
+    </section>
+    <section id="hero-credits">
+        <div>
+            <a href="https://www.flickr.com/photos/29892617@N06/8065987712/">&laquo;Boomers&raquo;</a> by <a href="https://www.flickr.com/photos/29892617@N06/">Jim & Rachel McArthur</a>
+        </div>
+    </section>
+{% endblock %}
+{% block scripts %}
+
+<!-- Facebook Conversion Code for Mailing list sign up -->
+<script>(function() {
+var _fbq = window._fbq || (window._fbq = []);
+if (!_fbq.loaded) {
+var fbds = document.createElement('script');
+fbds.async = true;
+fbds.src = '//connect.facebook.net/en_US/fbds.js';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(fbds, s);
+_fbq.loaded = true;
+}
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', '6015177037157', {'value':'0.01','currency':'USD'}]);
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6015177037157&amp;cd[value]=0.01&amp;cd[currency]=USD&amp;noscript=1" /></noscript>
+
+{% endblock %}

@@ -1,0 +1,284 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900);
+
+$main_width_768: 700px;
+$main_width_992: 840px;
+
+* {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	background-color: #333;
+	color: #555;
+}
+
+a {
+	color: #333;
+}
+a:hover {
+	color: black;
+}
+
+form {
+	input[type="submit"] {
+	    border: none;
+	    -webkit-appearance: none;
+	    -moz-appearance: none;
+
+	    display: inline-block;
+	    margin: 0;
+	    text-decoration: none;
+	    line-height: 20px;
+	    padding: .5em 2em;
+	    border-radius: 20px;
+	    background-color: #f7241f;
+	    color: #fff;
+	    font-size: inherit;
+	    cursor: pointer;
+	}
+
+	input[type="email"] {
+	    line-height: 32px;
+	    font-size: 1em;
+	    font-weight: bold;
+	    padding: 0 1em;
+	    border-radius: 1em;
+	    width: 17em;
+	    border: 2px solid #9e9d9d;
+	    margin-right: .5em;
+	}
+}
+
+section, footer[role="contentinfo"] {
+	> div {
+		padding: 1em;
+	}
+
+}
+section#sculpin img {
+	margin-top: 2em;
+	max-width: 100%;
+	height: auto;
+}
+
+section:not(#hero):not(#hero-credits) {
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+
+section:not(#hero):not(#hero-credits):nth-of-type(2n) {
+	background-color: #f7f7f7;
+}
+section:not(#hero):not(#hero-credits):nth-of-type(2n+1) {
+	background-color: #fff;
+}
+
+section {
+	h1 {
+		font-size: 2em;
+		font-weight: 200;
+		margin: 0;
+	}
+
+	h2 {
+		font-size: 1em;
+		font-weight: 600;
+		margin: 0;
+	}
+
+	ul {
+		margin-bottom: 2em;
+		padding-left: 1.25em;
+
+		li {
+			margin: .5em 0;
+		}
+	}
+}
+
+section#hero {
+	background-image: url(tickets.jpg);
+	background-size: cover;
+	background-position: center;
+	min-height: 100%;
+   	color: white;
+	text-shadow: 2px 2px 2px rgba(0,0,0,.75);
+
+	display: -webkit-box;   /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
+	display: -moz-box;      /* OLD: Firefox (buggy) */
+	display: -ms-flexbox;   /* MID: IE 10 */
+	display: -webkit-flex;  /* NEW, Chrome 21–28, Safari 6.1+ */
+	display: flex;          /* NEW: IE11, Chrome 29+, Opera 12.1+, Firefox 22+ */
+
+	-webkit-flex-direction: column;
+	flex-direction: column;
+
+	-webkit-justify-content: flex-end;
+	justify-content: flex-end;
+
+	-webkit-box-align: flex-end; -moz-box-align: flex-end; /* OLD… */
+	-ms-flex-align: flex-end; /* You know the drill now… */
+	-webkit-align-items: flex-end;
+	align-items: flex-end;
+
+	> div {
+		width: 100%;
+		padding-top: 1em;
+		padding-bottom: 2em;
+
+		background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.25) 12%, rgba(0,0,0,0.5) 38%, rgba(0,0,0,0.5) 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(12%,rgba(0,0,0,0.25)), color-stop(38%,rgba(0,0,0,0.5)), color-stop(100%,rgba(0,0,0,0.5)));
+		background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.25) 12%,rgba(0,0,0,0.5) 38%,rgba(0,0,0,0.5) 100%);
+		background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.25) 12%,rgba(0,0,0,0.5) 38%,rgba(0,0,0,0.5) 100%);
+		background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.25) 12%,rgba(0,0,0,0.5) 38%,rgba(0,0,0,0.5) 100%);
+		background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.25) 12%,rgba(0,0,0,0.5) 38%,rgba(0,0,0,0.5) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 );
+
+		p:last-of-type {
+			margin-top: 3em;
+			margin-bottom: .5em;
+		}
+	}
+
+	h1 {
+		font-size: 3em;
+	}
+
+	h2 {
+		font-size: 1em;
+	}
+
+	a {
+		color: #ccc;
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: white;
+	}
+}
+
+section#hero-credits {
+	width: 100%;
+	background-color: transparent;
+	position: absolute;
+	font-size: .75em;
+	color: #555;
+	margin-top: -2em;
+
+	> div {
+		width: 100%;
+		padding: .125em 1.25em;
+	}
+
+	a {
+		color: #555;
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: #aaa;
+	}
+}
+
+footer[role="contentinfo"] {
+	color: #aaa;
+
+	a {
+		color: #ccc;
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: #fff;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	section, section#hero, footer[role="contentinfo"] {
+		> div {
+			width: $main_width_768;
+			margin: 0 auto;
+		}
+	}
+
+	section {
+		h1 {
+			font-size: 3em;
+			font-weight: 200;
+			margin: 0;
+		}
+
+		h2 {
+			font-size: 1.5em;
+			font-weight: 600;
+			margin: 0;
+		}
+	}
+
+	section#sculpin img {
+		margin-top: -2em;
+		float: right;
+		margin-left: 1em;
+		margin-bottom: 1em;
+		max-width: 15em;
+		height: auto;
+	}
+
+	section#hero {
+		> div {
+			padding-bottom: 3em;
+			background: none;
+			filter: none;
+		}
+
+		h1 {
+			font-size: 6em;
+		}
+
+		h2 {
+			font-size: 2em;
+		}
+	}
+
+	section#hero-credits {
+		text-align: right;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	section, section#hero, footer[role="contentinfo"] {
+		> div {
+			width: $main_width_992;
+		}
+	}
+
+	section#sculpin img {
+		margin-top: -7em;
+		margin-left: 2em;
+		margin-bottom: 2em;
+		max-width: 15em;
+	}
+
+	section#hero {
+		/*background-image: url(liquid-carbon-by-memoryleakx.jpg);*/
+
+		> div {
+			width: $main_width_992;
+		}
+
+		h1 {
+			font-size: 8em;
+		}
+
+		h2 {
+			font-size: 2.75em;
+		}
+	}
+}
