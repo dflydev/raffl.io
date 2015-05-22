@@ -2,4 +2,3 @@
 /app/config/sculpin_site_*.yml
 /output_*/
 /sass/.sass-cache/
-/source/assets/css/screen.css
